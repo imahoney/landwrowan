@@ -1,0 +1,17 @@
+name = Gallery
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = media
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_caption
+features[field_base][] = field_gallery_image
+features[field_base][] = field_gallery_tags
+features[field_instance][] = node-gallery_image-field_caption
+features[field_instance][] = node-gallery_image-field_gallery_image
+features[field_instance][] = node-gallery_image-field_gallery_tags
+features[node][] = gallery_image
+features[taxonomy][] = tags

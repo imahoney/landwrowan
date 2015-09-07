@@ -1,0 +1,15 @@
+name = Basic Structure
+core = 7.x
+package = Features
+dependencies[] = date
+dependencies[] = features
+dependencies[] = location_cck
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_date
+features[field_base][] = field_location
+features[field_instance][] = node-page-body
+features[field_instance][] = node-page-field_date
+features[field_instance][] = node-page-field_location
+features[node][] = page
