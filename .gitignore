@@ -4,3 +4,13 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Ignore css and sass cache
+.sass-cache
+sites/all/themes/edc/.sass-cache
+sites/all/themes/edc/css/*
+
+# Ignore files used for local development
+sites/all/modules/contrib/stage_file_proxy
+
+.rvmrc
