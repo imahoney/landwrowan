@@ -87,6 +87,44 @@ function basic_structure_default_page_manager_handlers() {
     $pane->uuid = 'a3be2597-3ed2-489c-88cc-1b25a4f3f607';
     $display->content['new-a3be2597-3ed2-489c-88cc-1b25a4f3f607'] = $pane;
     $display->panels['middle'][1] = 'new-a3be2597-3ed2-489c-88cc-1b25a4f3f607';
+    $pane = new stdClass();
+    $pane->pid = 'new-a96e9e80-53ce-41f9-8e02-685cb3f572d4';
+    $pane->panel = 'middle';
+    $pane->type = 'views';
+    $pane->subtype = 'calendar';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 1,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'page_1',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'a96e9e80-53ce-41f9-8e02-685cb3f572d4';
+    $display->content['new-a96e9e80-53ce-41f9-8e02-685cb3f572d4'] = $pane;
+    $display->panels['middle'][2] = 'new-a96e9e80-53ce-41f9-8e02-685cb3f572d4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-5f826133-4302-46b5-82ce-65f63b9821a6';
   $handler->conf['display'] = $display;

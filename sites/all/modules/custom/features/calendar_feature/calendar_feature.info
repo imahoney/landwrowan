@@ -1,0 +1,8 @@
+name = calendar
+core = 7.x
+package = Features
+dependencies[] = date_views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = calendar
+features_exclude[dependencies][calendar] = calendar
