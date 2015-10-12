@@ -115,10 +115,12 @@ function calendar_feature_views_default_views() {
     'field_data_field_date.field_date_value' => 'field_data_field_date.field_date_value',
   );
   $handler->display->display_options['path'] = 'calendar-node-field-date/month';
-  $handler->display->display_options['menu']['type'] = 'default tab';
-  $handler->display->display_options['menu']['title'] = 'Month';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Calendar';
   $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['type'] = 'normal';
   $handler->display->display_options['tab_options']['title'] = 'Calendar';
   $handler->display->display_options['tab_options']['weight'] = '0';
@@ -156,10 +158,10 @@ function calendar_feature_views_default_views() {
     'field_data_field_date.field_date_value' => 'field_data_field_date.field_date_value',
   );
   $handler->display->display_options['path'] = 'calendar-node-field-date/week';
-  $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Week';
   $handler->display->display_options['menu']['weight'] = '2';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Day */
   $handler = $view->new_display('page', 'Day', 'page_3');
@@ -193,10 +195,10 @@ function calendar_feature_views_default_views() {
     'field_data_field_date.field_date_value' => 'field_data_field_date.field_date_value',
   );
   $handler->display->display_options['path'] = 'calendar-node-field-date/day';
-  $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Day';
   $handler->display->display_options['menu']['weight'] = '3';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Year */
   $handler = $view->new_display('page', 'Year', 'page');
@@ -258,10 +260,10 @@ function calendar_feature_views_default_views() {
     'field_data_field_date.field_date_value' => 'field_data_field_date.field_date_value',
   );
   $handler->display->display_options['path'] = 'calendar-node-field-date/year';
-  $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Year';
   $handler->display->display_options['menu']['weight'] = '4';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');

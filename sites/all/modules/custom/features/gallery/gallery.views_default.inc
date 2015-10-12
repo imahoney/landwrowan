@@ -35,10 +35,11 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['field_gallery_image']['table'] = 'field_data_field_gallery_image';
   $handler->display->display_options['fields']['field_gallery_image']['field'] = 'field_gallery_image';
   $handler->display->display_options['fields']['field_gallery_image']['label'] = '';
+  $handler->display->display_options['fields']['field_gallery_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_gallery_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_gallery_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_gallery_image']['settings'] = array(
-    'image_style' => 'large',
+    'image_style' => 'medium',
     'image_link' => '',
   );
   /* Field: Content: Caption */
@@ -71,6 +72,8 @@ function gallery_views_default_views() {
   $handler->display->display_options['fields']['colorbox']['popup'] = '<div class=\'gal-image-full\'>[field_gallery_image_1]</div>
 <div class=\'gal-caption\'>[field_caption]</div>';
   $handler->display->display_options['fields']['colorbox']['gid'] = 1;
+  $handler->display->display_options['fields']['colorbox']['width'] = '';
+  $handler->display->display_options['fields']['colorbox']['height'] = '';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -110,6 +113,7 @@ function gallery_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['image_gallery'] = $view;
 
   return $export;

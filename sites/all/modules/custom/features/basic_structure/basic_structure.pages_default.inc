@@ -29,6 +29,16 @@ function basic_structure_default_page_manager_handlers() {
     'contexts' => array(),
     'relationships' => array(),
     'name' => '',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'front',
+          'settings' => NULL,
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
   $display = new panels_display();
   $display->layout = 'onecol';
